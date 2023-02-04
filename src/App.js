@@ -1,30 +1,19 @@
 import "./App.css";
-import Navbarr from "./components/navbar";
-import Elements from "./components/elementsnavbar";
+import Navbar from "./components/Navbar"
+import ItemListContainer from "./components/ItemListContainer";
+import Info from "./components/Info";
+
+const text ="Bienvenido Elija su producto"
 
 function App() {
   return (
-    <div className="App">
+    <>    
       <header className="App-header">
-        <Navbarr>
-          <Elements
-            title="LOGO"
-          />
-          <Elements
-            title="Home"
-          />
-          <Elements
-            title="Quienes Somos"
-          />
-          <Elements
-            title="Productos"
-          />
-          <Elements
-            title="Carrito"
-          />
-        </Navbarr>
+        <Navbar/>
+        <ItemListContainer greeting={text} className="ItemListContainer"/>
+        <Info/>
       </header>
-    </div>
+    </>
   );
 }
 

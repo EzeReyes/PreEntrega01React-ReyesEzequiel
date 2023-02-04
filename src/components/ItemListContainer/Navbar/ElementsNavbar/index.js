@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const Elements = ({ title }) => {
+const ElementsNavbar = ({ title }) => {
   return (
       <p className="title">{title}</p>
   );
 };
 
-export default Elements;
+export default ElementsNavbar;
